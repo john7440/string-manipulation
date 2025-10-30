@@ -7,7 +7,8 @@ public class Palindrome {
 	// Question 5.4
 	public static boolean isPalindrome(String text){
 		
-		// First we normalize the text by decomposing letters then remove accents
+		// Question 5.5
+		// First we normalize the text by decomposing letters then remove accent
 		String normalizedText = Normalizer.normalize(text, Normalizer.Form.NFD)
 											.replaceAll("\\p{M}", "");
 		
