@@ -36,13 +36,13 @@ public class TestString {
 	
 		// Question 5.3
 		// We first initialize a new scanner, then prompt the user to put
-		// a word he want to replace (beau)
+		// a word he want to replace (beau)...
 		String textToReplace  = "Il fait beau aujourd'hui";
 		System.out.println("Enter a word that will replace (beau): ");
 		Scanner scan = new Scanner(System.in);
 		String newWord = scan.next();
 		
-		// then we use the built-in method replace
+		// ...then we use the built-in method replace to switch words
 		String replacedText = textToReplace.replace("beau", newWord);
 		System.out.println(replacedText);
 		
