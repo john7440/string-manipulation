@@ -25,17 +25,18 @@ public class Palindrome {
 
 	public static void main(String[] args) {
 		
-		
-		System.out.println("Palindrom checking: ");
+		// The prompt asking for a sentence to check if it's a palindrome or not
+		System.out.println("Palindrome checking: ");
 		Scanner scan = new Scanner(System.in);
 		String textToCheck = scan.nextLine();
 		
 		boolean result = isPalindrome(textToCheck);
 		
+		// Final display
 		if (result) {
-			System.out.println(textToCheck + " is a palindrome!");
+			System.out.println("'" + textToCheck + "'" + " is a palindrome!");
 		} else {
-			System.out.println(textToCheck + " is not a palindrome!");
+			System.out.println("'" + textToCheck + "'" + " is not a palindrome!");
 		}
 		
 		scan.close();
